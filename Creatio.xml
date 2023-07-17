@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Creatio" verbose="1" configfailurepolicy="continue" >
+    <parameter name="url" value="https://dev2-is-il.creatio.com"/>
+
+    <parameter name="userNameOfEntrepreneurInNetiveiIsrael"
+               value="bmF0aXlhemFtMTFAZ21haWwuY29t"/>
+    <parameter name="passwordOfEntrepreneurInNetiveiIsrael"
+               value="Tm4xMjM0NTY3"/>
+    <parameter name="codeOfEntrepreneurInNetiveiIsrael"
+               value="RlJENTJPMlVDNFU3QjZUWDM3M09XSkdGVUU2WUFQTUk="/>
+
+    <test name="Login page - 1 Tests" enabled="true">
+        <classes>
+            <class name="functional.LoginTest">
+                <methods>
+                    <include name="loginValid"/>
+                    <include name="loginValid"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--    <test name="Login page - 2 Tests" enabled="true">-->
+<!--        <classes>-->
+<!--            <class name="functional.LoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="loginValid"/>-->
+<!--                    <include name="loginValid"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Login page - 3 Tests" enabled="true">-->
+<!--        <classes>-->
+<!--            <class name="functional.LoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="loginValid"/>-->
+<!--                    <include name="loginValid"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Entrepreneur user's permission" enabled="true">-->
+<!--        <parameter name="enterprisingCompany" value="מקורות מטה"/>-->
+<!--        <parameter name="projectName" value="בדיקת אוטומציה"/>-->
+<!--        <parameter name="entrepreneurName" value="נתי יזם"/>-->
+<!--        <parameter name="projectDomain" value="תשתיות תחבורה"/>-->
+<!--        <parameter name="projectDescription" value="בדיקת פתיחת פרויקט דרך האוטומציה"/>-->
+<!--        <parameter name="locationDescription" value="אוטומציה"/>-->
+
+<!--        <classes>-->
+<!--            <class name="functional.EntrepreneurTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [Creatio]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="codeOfEntrepreneurInNetiveiIsrael" value="RlJENTJPMlVDNFU3QjZUWDM3M09XSkdGVUU2WUFQTUk="/>
+  <parameter name="userNameOfEntrepreneurInNetiveiIsrael" value="bmF0aXlhemFtMTFAZ21haWwuY29t"/>
+  <parameter name="passwordOfEntrepreneurInNetiveiIsrael" value="Tm4xMjM0NTY3"/>
+  <parameter name="url" value="https://dev2-is-il.creatio.com"/>
+  <test thread-count="5" name="Login page - 1 Tests(failed)" verbose="0">
+    <classes>
+      <class name="functional.LoginTest">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="loginValid" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- functional.LoginTest -->
+    </classes>
+  </test> <!-- Login page - 1 Tests(failed) -->
+</suite> <!-- Failed suite [Creatio] -->

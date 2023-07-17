@@ -1,0 +1,4 @@
+base\BaseTest.class
+functional\LoginTest.class
+functional\RequestsTest.class
+functional\EntrepreneurTest.class
